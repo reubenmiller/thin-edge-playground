@@ -1,0 +1,1 @@
+@reboot root sleep 10 && /usr/lib/tedge-utils/bootup.sh

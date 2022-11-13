@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Example of running a custom command when the service is stopping
+# VERSION=$(tedge --version | cut -d' ' -f2)
+# tedge mqtt pub --qos 0 tedge/events/startup_event "$(printf '{"text": "tedge stopping 🔻 version=%s", "type": "agent_boot"}' "$VERSION")"

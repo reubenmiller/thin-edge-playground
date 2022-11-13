@@ -1,0 +1,14 @@
+[Unit]
+Description=tedge-agent-startup
+After=network.target
+Before=tedge-agent.service
+Requires=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/lib/tedge-utils/tedge-agent.start
+ExecStop=/usr/lib/tedge-utils/tedge-agent.stop
+
+[Install]
+WantedBy=multi-user.target

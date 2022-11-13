@@ -1,0 +1,6 @@
+*.deb
+*.tar
+*.zip
+*.apk
+*.rpm
+*.env
