@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+sudo systemctl start collectd
+sudo systemctl enable collectd
+
+sudo systemctl start tedge-mapper-collectd
+sudo systemctl enable tedge-mapper-collectd

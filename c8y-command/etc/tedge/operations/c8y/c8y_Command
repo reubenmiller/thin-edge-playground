@@ -1,0 +1,4 @@
+[exec]
+  topic = "c8y/s/ds"
+  on_message = "511"
+  command = "/usr/share/tedge-contrib/bin/handle_command.sh"
