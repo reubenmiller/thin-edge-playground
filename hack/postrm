@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# if [ -f /etc/tedge/operations/c8y/c8y_RemoteAccessConnect ]; then
+#     rm -f /etc/tedge/operations/c8y/c8y_RemoteAccessConnect
+#     systemctl restart tedge-mapper-c8y.service || true
+# fi

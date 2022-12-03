@@ -1,0 +1,8 @@
+#!/bin/sh
+systemctl restart tedge-mapper-c8y.service || true
+
+chown -R tedge:tedge /etc/xmas
+touch /var/log/xmas.log
+chown tedge:tedge /var/log/xmas.log
+chmod 666 /var/log/xmas.log
+chmod 666 /etc/xmas/state

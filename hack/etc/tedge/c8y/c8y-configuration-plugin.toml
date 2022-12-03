@@ -1,0 +1,8 @@
+files = [
+    { path = '/etc/apt/sources.list.d/custom_applications.list', type = 'apt-extension' },
+    { path = '/etc/tedge/c8y/c8y-log-plugin.toml', type = 'c8y-log-plugin' },
+    { path = '/etc/tedge/mosquitto-conf/c8y-bridge.conf' },
+    { path = '/etc/tedge/mosquitto-conf/tedge-mosquitto.conf' },
+    { path = '/etc/mosquitto/mosquitto.conf', type = 'mosquitto', user = 'mosquitto', group = 'mosquitto', mode = 0o644 },
+    { path = '/etc/collectd/collectd.conf', type = 'collectd' },
+]

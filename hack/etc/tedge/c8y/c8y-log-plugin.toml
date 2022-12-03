@@ -1,0 +1,8 @@
+files = [
+    { type = "mosquitto", path = '/var/log/mosquitto/mosquitto.log' },
+    { type = "commands", path = '/var/log/tedge/agent/c8y_Command-*' },
+    { type = "software-management", path = '/var/log/tedge/agent/software-*' },
+    { type = "xmas", path = '/var/log/xmas.log' },
+    { type = "c8y_LogRequest", path = '/var/log/tedge/agent/c8y_LogRequest/*' },
+    { type = "c8y_CustomOperation", path = '/var/log/tedge/agent/c8y_CustomOperation/*' },
+]

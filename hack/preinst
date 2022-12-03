@@ -1,0 +1,6 @@
+#!/bin/sh
+# systemctl restart tedge-mapper-c8y.service || true
+
+# Remove any custom modified files
+rm -f etc/tedge/c8y/c8y-configuration-plugin.toml
+rm -f etc/tedge/c8y/c8y-log-plugin.toml
