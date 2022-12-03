@@ -4,3 +4,4 @@
 *.apk
 *.rpm
 *.env
+*.DS_Store
