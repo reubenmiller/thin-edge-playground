@@ -1,0 +1,4 @@
+[exec]
+  topic = "c8y/s/ds"
+  on_message = "530"
+  command = "/usr/share/tedge-contrib/bin/c8y_RemoteAccessConnect.py"
