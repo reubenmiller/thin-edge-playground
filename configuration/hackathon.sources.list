@@ -1,0 +1,2 @@
+# custom hackathon debian repo
+deb [trusted=yes] https://thinedgeio.jfrog.io/artifactory/stable stable main
