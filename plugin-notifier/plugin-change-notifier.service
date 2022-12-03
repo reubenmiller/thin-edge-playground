@@ -1,0 +1,9 @@
+[Unit]
+Description=plugin-notifier
+After=mosquitto.service
+
+[Service]
+ExecStart=/usr/local/share/plugin-notifier/monitor.py
+
+[Install]
+WantedBy=multi-user.target
