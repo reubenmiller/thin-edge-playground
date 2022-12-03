@@ -1,6 +1,16 @@
 #!/bin/sh
 
-# if [ -f /etc/tedge/operations/c8y/c8y_RemoteAccessConnect ]; then
-#     rm -f /etc/tedge/operations/c8y/c8y_RemoteAccessConnect
-#     systemctl restart tedge-mapper-c8y.service || true
-# fi
+set -e
+
+case "$1" in
+    upgrade)
+        echo "Handling upgrade"
+        ;;
+    *)
+        if [ -f /etc/tedge/operations/c8y/c8y_RemoteAccessConnect ]; then
+            echo "Removing /etc/tedge/operations/c8y/c8y_RemoteAccessConnect"
+            rm -f /etc/tedge/operations/c8y/c8y_RemoteAccessConnect
+            systemctl restart tedge-mapper-c8y.service || true
+        fi
+        ;;
+esac

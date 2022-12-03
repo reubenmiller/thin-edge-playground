@@ -8,7 +8,7 @@ COMMON=(
 )
 
 NAME=c8y-remoteaccess-plugin
-VERSION=0.0.12
+VERSION=0.0.13
 
 rm -f *.deb
 find . -name ".DS_Store" -delete
