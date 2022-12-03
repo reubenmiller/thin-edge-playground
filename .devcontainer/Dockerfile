@@ -15,4 +15,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         ruby \
         squashfs-tools \
         rpm \
-    && gem install fpm
+    && gem install fpm \
+    && curl -fL https://getcli.jfrog.io/v2 | sh \
+    && mv jfrog /usr/local/bin/
